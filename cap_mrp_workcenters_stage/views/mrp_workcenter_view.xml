@@ -16,7 +16,7 @@
             <field name="oee_target" position="after">
                 <field name="activity_state"/>
                 <field name="activity_ids"/>
-                <progressbar field="activity_state" colors="{&quot;planned&quot;: &quot;success&quot;, &quot;today&quot;: &quot;warning&quot;, &quot;overdue&quot;: &quot;danger&quot;}" sum_field="oee_target"/>
+                <progressbar field="activity_state" colors="{&quot;planned&quot;: &quot;success&quot;, &quot;today&quot;: &quot;warning&quot;, &quot;overdue&quot;: &quot;danger&quot;}" avg_field="oee_target"/>
             </field>
         </field>
     </record>
