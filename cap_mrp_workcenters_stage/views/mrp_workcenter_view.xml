@@ -16,7 +16,12 @@
             <field name="oee_target" position="after">
                 <field name="activity_state"/>
                 <field name="activity_ids"/>
-                <progressbar field="activity_state" colors="{&quot;planned&quot;: &quot;success&quot;, &quot;today&quot;: &quot;warning&quot;, &quot;overdue&quot;: &quot;danger&quot;}" sum_field="oee_target"/>
+                <field name="avg_target"/>
+<!--                <div class="o_kanban_count row">-->
+<!--                    <label for="avg_target" string="Average Target"/>-->
+<!--                    <field name="avg_target"/> %-->
+<!--                </div>-->
+                <progressbar field="activity_state" colors="{&quot;planned&quot;: &quot;success&quot;, &quot;today&quot;: &quot;warning&quot;, &quot;overdue&quot;: &quot;danger&quot;}" sum_field="avg_target"/>
             </field>
         </field>
     </record>
@@ -41,7 +46,7 @@
         <field name="arch" type="xml">
             <tree string="Stages" editable="bottom">
                 <field name="sequence" widget="handle"/>
-                <field name="name" readonly="1"/>
+                <field name="name"/>
             </tree>
         </field>
     </record>

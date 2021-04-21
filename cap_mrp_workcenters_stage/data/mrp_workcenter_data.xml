@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <record model="ir.cron" id="auto_post_awards_to_fahr">
+        <field name="name">Update Avg Target</field>
+        <field eval="True" name="active"/>
+        <field name="model_id" ref="model_mrp_workcenter"/>
+        <field name="state">code</field>
+        <field name="code">model._get_avg()</field>
+        <field name="interval_number">1</field>
+        <field name="interval_type">hours</field>
+        <field name="numbercall">-1</field>
+        <field name="doall" eval="False"/>
+    </record>
+</odoo>
