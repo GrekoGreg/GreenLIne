@@ -11,6 +11,8 @@
     'description': """display a MRP workcenter knaban view by stages.""",
     'depends': ['mrp'],
     'data': [
+        'security/ir.model.access.csv',
+        'data/mrp_workcenter_data.xml',
         'views/mrp_workcenter_view.xml',
     ],
     'installable': True,
